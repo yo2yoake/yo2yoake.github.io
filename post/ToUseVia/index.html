@@ -1,0 +1,196 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Via浏览器使用指南 | To Dawn</title>
+
+<link rel="shortcut icon" href="https://yo2yoake.github.io/favicon.ico?v=1684641306825">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://yo2yoake.github.io/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            To Dawn
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1684641306825" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    Via浏览器使用指南
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2023-04-20 Thursday ·
+                    </time>
+                    
+                        <a href="https://yo2yoake.github.io/tag/Android/" class="post-tags">
+                            # Android
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <h1 id="chap1-搜索引擎">Chap.1 搜索引擎</h1>
+<h2 id="1-百度">1. 百度</h2>
+<p>使用<strong>简单搜索</strong>的UA进行去广告操作。</p>
+<p>进入<a href="m.baidu.com">m.baidu.com</a>，启用该网站的网站设定，填入如下UA即可。</p>
+<pre><code>Mozilla/5.0 (Linux; Android 11; Ghxi Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36 T7/12.16 SearchCraft/3.9.1 (Baidu; P1 11)
+</code></pre>
+<h1 id="chap2-广告拦截">Chap.2 广告拦截</h1>
+<ol>
+<li>EasyList<pre><code>https://easylist-downloads.adblockplus.org/easylist.txt
+</code></pre>
+</li>
+<li>EasyList China<pre><code>https://easylist-downloads.adblockplus.org/easylistchina.txt
+</code></pre>
+</li>
+<li>EasyPrivacy<pre><code>https://easylist-downloads.adblockplus.org/easyprivacy.txt
+</code></pre>
+</li>
+<li>XXKiller<pre><code>https://cdn.jsdelivr.net/gh/DoingDog/xXKiller@main/w.txt
+</code></pre>
+</li>
+<li>Adblock Warning Removal List<pre><code>https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
+</code></pre>
+</li>
+<li>CJX's Annoyance List<pre><code>https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
+</code></pre>
+</li>
+</ol>
+<h1 id="chap3-第三方插件">Chap.3 第三方插件</h1>
+<p>在网站<a href="http://via-app.cn">via轻插件</a>浏览并安装插件。在<strong>设置</strong> - <strong>脚本</strong>中管理已经安装的插件。</p>
+<ol>
+<li>N-lib</li>
+<li>网页弹窗拦截</li>
+<li>H5视频调速器</li>
+<li>播放器增强</li>
+<li>复制限制解除(本地版)</li>
+<li>纯净苍穹</li>
+<li>网页复制限制解除</li>
+</ol>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://yo2yoake.github.io/post/intro/" class="post-title gt-a-link">
+                    To Dawn 去往黎明
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">『夜明け』，意为「黎明」。</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://yo2yoake.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>
