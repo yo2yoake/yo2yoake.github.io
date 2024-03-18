@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOAKE作品集 - YOYOPortfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+
+      /* 开启flex布局。需要注意垂直居中时需要给父元素高度 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .title {
+      margin: 0;
+      padding: 0;
+      font-size: 100px;
+      font-weight: bold;
+      color: #333;
+      position: relative;
+      cursor: default;
+    }
+
+    .title::after {
+      content: 'YOYOPortfolio';
+      color: transparent;
+
+      /* 开启绝对定位，使两段文字重合 */
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      /* 使文字变成渐变色 */
+      background: url(./index-background.svg) center/100%;
+      background-clip: text;
+
+      /* 聚光灯特效，圆形区域裁剪。后来回移动 */
+      clip-path: circle(100px at 100% 50%);
+      animation: moveLight 5s infinite;
+    }
+
+    .no-select {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @keyframes moveLight {
+      0% {
+        clip-path: circle(100px at 0% 50%);
+      }
+
+      50% {
+        clip-path: circle(100px at 100% 50%);
+      }
+
+      100% {
+        clip-path: circle(100px at 0% 50%);
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="title no-select">YOYOPortfolio</div>
+  <!-- <a href="./50p50d/01/index.html">fwesdgfwrf</a> -->
+
+</body>
+
+</html>
